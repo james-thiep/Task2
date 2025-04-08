@@ -1,7 +1,7 @@
 package banking;
 
 class InternalBankOperations {
-    private static final double INTEREST_RATE = 2.5;
+    private static final double INTEREST_RATE = 2.6;
 
     static void processMonthlyInterest(CustomerAccount account) {
         account.applyInterest(INTEREST_RATE);
