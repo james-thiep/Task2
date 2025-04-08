@@ -6,7 +6,7 @@ public class BankingSystemTest {
     public static void main(String[] args) {
 
         AccountOperations testAccount = createTestAccount();
-        testAccount.deposit(150);
+        testAccount.deposit(150000);
         System.out.println(testAccount.getAccountDetails());
     }
 
