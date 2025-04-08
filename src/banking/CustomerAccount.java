@@ -14,7 +14,7 @@ public class CustomerAccount {
         this.balance = 0.0;
     }
 
-    // Public getters
+    
     public String getAccountNumber() {
         return accountNumber;
     }
