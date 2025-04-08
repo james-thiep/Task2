@@ -14,7 +14,7 @@ public class CustomerAccount {
         this.balance = 0.0;
     }
 
-    
+
     public String getAccountNumber() {
         return accountNumber;
     }
@@ -27,17 +27,14 @@ public class CustomerAccount {
         return accountType;
     }
 
-    // Protected getter
     protected double getBalance() {
         return balance;
     }
 
-    // Package-private setter
     void setBalance(double amount) {
         this.balance = amount;
     }
 
-    // Public transaction method
     public void deposit(double amount) {
         if (amount > 0) {
             balance += amount;
@@ -45,7 +42,6 @@ public class CustomerAccount {
         }
     }
 
-    // Protected banking operation
     protected void applyInterest(double rate) {
         if (rate > 0) {
             double interest = balance * rate / 100;
@@ -53,8 +49,7 @@ public class CustomerAccount {
             System.out.println("Interest applied. New balance: " + balance);
         }
     }
-
-    // Package-private transfer method
+    
     void internalTransfer(CustomerAccount recipient, double amount) {
         if (amount > 0 && this.balance >= amount) {
             this.balance -= amount;
